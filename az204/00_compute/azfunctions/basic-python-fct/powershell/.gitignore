@@ -4,3 +4,4 @@
 # but not
 !.gitignore
 !*.ps1
+!README.md

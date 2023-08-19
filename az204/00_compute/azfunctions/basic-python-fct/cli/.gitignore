@@ -4,3 +4,4 @@
 # but not
 !.gitignore
 !*.sh
+!README.md
