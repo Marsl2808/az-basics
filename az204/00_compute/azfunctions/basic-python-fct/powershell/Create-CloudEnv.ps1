@@ -14,7 +14,7 @@ New-AzStorageAccount -ResourceGroupName $GROUP_NAME -Name $STORAGE_NAME -SkuName
 # optional: create premium- ("EP1") or dedicated ("B1") plan
 # comment following to create (default) consumption plan
 #"---- create plan ----"
-#$PLAN_SKU="B1" #"B1"
+#$PLAN_SKU="B1" #"EP1"
 #$PLAN_NAME="fct-plan"
 #New-AzFunctionAppPlan -Name $PLAN_NAME -ResourceGroupName $GROUP_NAME -Location $LOCATION -Sku $PLAN_SKU -WorkerType Linux
 
