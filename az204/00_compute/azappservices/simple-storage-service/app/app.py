@@ -1,5 +1,5 @@
 
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 import os
 import random
 
@@ -7,8 +7,7 @@ from flask import Flask
 from azure.storage.blob import BlobClient
 
 # init local env
-# TODO: set remote config
-#load_dotenv()
+load_dotenv()
 CONN_STR = os.getenv('CONN_STR')
 CONTAINER_NAME=os.getenv('CONTAINER_NAME')
 
@@ -27,8 +26,7 @@ def main_page_named(name):
 def upload_blob():
 
     blob = BlobClient.from_connection_string(conn_str=CONN_STR, container_name=CONTAINER_NAME, blob_name=get_random_name())
-
-    while(not blob.exists()):
+    while(blob.exists()):
         blob = BlobClient.from_connection_string(conn_str=CONN_STR, container_name=CONTAINER_NAME, blob_name=get_random_name())
 
     with open("./SampleSource.txt", "rb") as data:
