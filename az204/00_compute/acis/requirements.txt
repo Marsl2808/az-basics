@@ -1,0 +1,5 @@
+#python-dotenv
+
+#azure-storage-blob
+Flask==2.0.2
+#gunicorn
