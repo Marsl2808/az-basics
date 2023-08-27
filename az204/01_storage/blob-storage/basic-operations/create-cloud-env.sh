@@ -31,9 +31,9 @@ echo "SAS-Token:"
 echo $(az storage account keys list -g $RG -n $SA_NAME)
 ####
 
-echo "----- creating container -----"
+echo "----- creating containers -----"
 az storage container create --name $CONTAINER_NAME --account-name $SA_NAME --connection-string $connection_string --public-access 'container'
-echo $CONTAINER_NAME
+az storage container create --name $CONTAINER_NAME"2" --account-name $SA_NAME --connection-string $connection_string --public-access 'container'
 
 echo "---- add role ----"
 principal_id=$(az ad user show --id $PRINCIPAL --query "id" --output tsv)
