@@ -1,0 +1,8 @@
+python-dotenv
+# Blob storage client
+azure-storage-blob
+azure-mgmt-storage
+azure-identity
+#azure-storage-file-share : Storage file share client
+#azure-storage-file-datalake : ADLS Gen2 client
+#azure-storage-queue: Queue storage client

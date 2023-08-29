@@ -1,1 +1,0 @@
-Python-SDK operations are contained in az-app-services example and will not be repeated here.
