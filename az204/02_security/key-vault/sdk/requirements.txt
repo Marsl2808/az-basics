@@ -1,0 +1,6 @@
+python-dotenv
+# provides AAD token auth support
+azure-identity
+azure-keyvault-secrets
+azure-keyvault-keys
+azure-keyvault-certificates
